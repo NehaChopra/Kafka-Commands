@@ -2,13 +2,15 @@
 
 Most Commonly Used Kafka Commands
 
-1. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName —create —partitions 3 —replication-factor 3
+1. zookeeper-server-start config/zookeeper.properties
 
-2. Kafka-topcis —zookeeper 127.0.0.1:2181 —list
+2. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName —create —partitions 3 —replication-factor 3
 
-3. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName describe
+3. Kafka-topcis —zookeeper 127.0.0.1:2181 —list
 
-4. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName —delete
+4. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName describe
+
+5. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName —delete
 
 5. Kafka-producer-console —broker-list 127.0.0.1:2181 —topic topicName
 
