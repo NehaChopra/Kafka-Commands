@@ -2,15 +2,15 @@
 
 Most Commonly Used Kafka Commands
 
-1. zookeeper-server-start config/zookeeper.properties
+1. zookeeper-server-start.sh config/zookeeper.properties
 
-2. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName —create —partitions 3 —replication-factor 3
+2. kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic topicName --create --partitions 3 --replication-factor 3
 
-3. Kafka-topcis —zookeeper 127.0.0.1:2181 —list
+3. kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
 
-4. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName describe
+4. kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic topicName --describe
 
-5. Kafka-topcis —zookeeper 127.0.0.1:2181 —topic topicName —delete
+5. kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic test-tpic --delete
 
 5. Kafka-producer-console —broker-list 127.0.0.1:2181 —topic topicName
 
@@ -33,3 +33,5 @@ Most Commonly Used Kafka Commands
 14. Kafka-consumer-groups —bootstrap-server localhost:9092 —describe —group groupName —reset-offsets —to-earliest —execute —topic topicName
 
 15. Kafka-consumer-groups —bootstrap-server localhost:9092 —describe —group groupName —reset-offsets —shift-by -2 —execute —topic topicName
+
+16. kafka-server-start.sh config/server.properties
