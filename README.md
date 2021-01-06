@@ -20,13 +20,13 @@ Most Commonly Used Kafka Commands
 
 9. kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topicName --from-beginning
 
-10. Kafka-consumer-console —bootstrap-server 27.0.0.1:2181 —topic topicName —group groupName
+10. kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topicName --group groupName
 
-11. Kafka-consumer-console —bootstrap-server 27.0.0.1:2181 —topic topicName —group groupName —from-beginning
+11. kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topicName --group groupName --from-beginning
 
-12. Kafka-consumer-groups —bootstrap-server localhost:9092 —list
+12. kafka-consumer-groups.sh --bootstrap-server localhost:9092  --list
 
-13. Kafka-consumer-groups —bootstrap-server localhost:9092 —describe —group groupName
+13. kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group groupName
 
 14. Kafka-consumer-groups —bootstrap-server localhost:9092 —describe —group groupName —reset-offsets —to-earliest —execute —topic topicName
 
