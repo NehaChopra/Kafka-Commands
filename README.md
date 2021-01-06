@@ -12,15 +12,13 @@ Most Commonly Used Kafka Commands
 
 5. kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic test-tpic --delete
 
-5. Kafka-producer-console —broker-list 127.0.0.1:2181 —topic topicName
+6. kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic topicName
 
-6. Kafka-producer-console —broker-list 127.0.0.1:2181 —topic topicName —producer-property asks=all
+7. kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic kafka-events-util --producer-property asks=all
 
-7. Kafka-producer-console —broker-list 127.0.0.1:2181 —topic topicName
+8. kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topicName
 
-8. Kafka-consumer-console —bootstrap-server 27.0.0.1:2181 —topic topicName
-
-9. Kafka-consumer-console —bootstrap-server 27.0.0.1:2181 —topic topicName —from-beginning
+9. kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic topicName --from-beginning
 
 10. Kafka-consumer-console —bootstrap-server 27.0.0.1:2181 —topic topicName —group groupName
 
